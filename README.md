@@ -1,7 +1,11 @@
 # Touchless Customer Feedback Device
 
-### Discription
-This is a computer vision Software for a customer feedback device. The software uses Google's MediaPipe Hands artificiall intellegance model API. 
+### Discription and Motivation
+This is a computer vision Software for a customer feedback device. The software uses Google's MediaPipe Hands artificiall intellegance model API. It is meant to replace typical touch-based customer feedback devices like the one below.
+
+<p align=center>
+<img src="https://github.com/JohannesAutenrieb/TeamACranfieldUAVSwarm/blob/master/img/Statemachine_main.png" alt="Statemachine_main" height=500px>
+</p>
 
 #### Working Concept 
 
@@ -28,14 +32,6 @@ Moreover, these three feedback options could be tailored based on the user needs
 <img src="https://github.com/JohannesAutenrieb/TeamACranfieldUAVSwarm/blob/master/img/System_Overview.png" alt="System_Overview" height=500px>
 </p>
 
-
-#### Graphical User Interface
-
-The GUI was created to simplify the mission overview for the user during the competition. The GUI-System is fully integrated in to the ROS Network System and is listining to the exchanged messages. Received information are displayed for the user in a Mission Window which is based on the PyQT framework.
-
-<p align=center>
-<img src="https://github.com/JohannesAutenrieb/TeamACranfieldUAVSwarm/blob/master/img/GUI_MISSION_OVERVIEW.png" alt="MISSION_GUI" height=500px>
-</p>
 
 
 
