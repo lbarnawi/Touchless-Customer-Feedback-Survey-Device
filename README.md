@@ -42,7 +42,7 @@ Or
 pip3 install requirements.txt
 ```
 
-## Usage
+## How to run the software?
 
 To run the software, after installing above dependencies run the GUI.py or use ther terminal:
 ```
