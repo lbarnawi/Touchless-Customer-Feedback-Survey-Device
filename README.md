@@ -55,5 +55,15 @@ To run the software, after installing above dependencies run the GUI.py or use t
 ```
 python gui.py
 ```
+##### I tested the software on two platforms with the following performance:
+* Acer laptop Intel( R) Core( TM) i 7 3537 U CPU @ 2.00 GHz 2.50 GHz) processor running Windows 11 using two different IDE's Pycharm and Visual Studio Code and the speed achived was 20 FPS which is relatively slow.
+
+
+* A qudcore Raspberry pi 4 (Broadcom BCM 2711 , Quad core Cortex A 72 ARM v 8 ) 64 bit SoC @ 1.5 GHz running Ubuntu Desktop 21.10, and the speed achived was 12 FPS which is relatively slow.
+
+
 #### Resources
-* https://www.youtube.com/watch?v=LAngmjW8Ngg
+* https://github.com/google/mediapipe
+* https://www.youtube.com/watch?v=NZde8Xt78Iw&t=272s
+* https://www.youtube.com/watch?v=p5Z_GGRCI5s&t=1847s
+* https://www.youtube.com/watch?v=vQZ4IvB07ec&t=534s
