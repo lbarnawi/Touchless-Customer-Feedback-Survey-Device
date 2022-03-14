@@ -1,32 +1,28 @@
-# Mission Planning & Task Allocation - Team A (Cranfield University)
+# Touchless Customer Feedback Device
 
 ### Discription
-This Software Project was created as part of a UAV Swarm Project in which a Cranfield Student Team participated in the BAE Systems UAV Swarm Challenge. The software contains the Mission Control and Task Allocation system which was utilised for the orchestration of the UAV Swarm. The sytems is embedded in a ROS Framwork which is able to communicate with other Subsytems such as the Agents Autopilot and the Situational Awarness Systems (these software parts are not part of this repository). The Software is able to process the receiving data from Situational Awarness (current Agent and Enemies Inforamtion) and using a combinatorial optimization appraoch to choose suitable countermeasures against incoming threads.
+This is a computer vision Software for a customer feedback device. The software uses Google's MediaPipe Hands artificiall intellegance model API. 
 
-#### Task Allocation Appraoch
+#### Working Concept 
 
-The dynamic task allocation approach is to decompose complex multi-task missions in to single-tasks. This simplfies the assignment problem from a complex optimization to a problem which can be solved in optimal manner with linear programming appraoches. For solving this optimization problem following algorithms are implemented:
-* Kuhn–Munkres Algorithm
-* Jonker-Volgenant Algorithm
-* Stable-Marriage Algorithm
+The device needs an input sensor (camera) and an output source (screen), the camera captures the hand wtihing its field of view and then pass it to MediaPipe Hand model-written using Python- for it to:
+* Detect hand
+* Find hand landmarks
+* Detect hand gesture
+Next, a simple Graphical User Interface-written using Tkinter-is used to dispaly the feedback of the user which could be one of three options: 
+* Satisfied
+* Unsatisfied
+* Netural 
+Moreover, these three feedback options could be tailored based on the user needs. 
 
-The default Algorithm for System is the Kuhn–Munkres Algorithm since it is ensured that it delivers the optimal solution in a polynomial time. The Jonker-Volgenant Algorithm is implemented as an alternative, since it has the potential to solve the problem with an sufficient accuarcy by having a lower computational complexity as the Kuhn–Munkres Algorithm. Nevertheless, is that algorithm currently under testing, it will be implemented in future releases. The stable marriage algorithm is not under use anymore, since both the Jonker-Volgenant and the  Jonker-Volgenant Algorithm delivering better results in terms of a cost optimal solution.
 
-#### Mission Concept
 
-The full mission was seperated in to 3 stages:
-* Stage 1: Agent Setup
-* Stage 2: Asset Protection (Dynamic Task Allocation)
-* Stage 3: Landing 
-
-The distinct stages are implemented as a state machines which is using defined trigger parameter to transit from one stage to another. Inside of stage 1 and stage 3 sub-statemachines are implemented which are ensuring the correct agent workflows in those stages. Stage 2 is fully dynamic and is only using a dynamic task allocation approach as explained prior.
 
 <p align=center>
 <img src="https://github.com/JohannesAutenrieb/TeamACranfieldUAVSwarm/blob/master/img/Statemachine_main.png" alt="Statemachine_main" height=500px>
 </p>
 
-#### Task Manger
-In order to create a fully autonomous mission system a task manager system has been implemented. The task manager is a independent software system which is able to recognise task assignments and to monitor their progress. For that is the process computing a reward for each waypoint or attack task progress of the agents. When it is recognised that the reward is not increasing over a defined time window the assigned task is getting aborted. The same is the case for a task execution which exceeds a certain time window. The time window for each assignened task is individualy defined based on task type, distance and flying speed.
+
 
 <p align=center>
 <img src="https://github.com/JohannesAutenrieb/TeamACranfieldUAVSwarm/blob/master/img/System_Overview.png" alt="System_Overview" height=500px>
@@ -45,7 +41,7 @@ The GUI was created to simplify the mission overview for the user during the com
 
 ## Dependencies
 
-The software system us using external libraries which needs to be installed.
+The software uses external libraries which can be installed using the requirements.txt file.
 
 Install Rospy for Pyton 3.6:
 
