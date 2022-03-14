@@ -4,7 +4,7 @@
 This is a computer vision software for a customer feedback device. The software uses Google's MediaPipe Hands artificial intelligence model API. It is meant to replace typical touch-based customer feedback devices like the one below.
 
 <p align=center>
-<img src="https://github.com/lbarnawi/Touchless_customer_feedback_survey_device_/blob/master/Typical%20customer%20feedback%20device.png?raw=true" alt="Typical customer feedback device" height=500px>
+<img src="https://github.com/lbarnawi/Touchless_customer_feedback_survey_device_/blob/master/Typical%20customer%20feedback%20device.png?raw=true" alt="Typical customer feedback device" height=350>
 </p>
 
 ## Working Concept 
@@ -25,6 +25,13 @@ Moreover, these three feedback options could be tailored based on the user's nee
 <p align=center>
 <img src="https://github.com/lbarnawi/Touchless_customer_feedback_survey_device_/blob/master/working%20concept.png?raw=true" alt="Working concept" height=500px>
 </p>
+
+
+<p align=center>
+<img src="https://github.com/lbarnawi/Touchless_customer_feedback_survey_device_/blob/master/device%20GUI.gif" alt="Device GUI" height=350px><img src="https://github.com/lbarnawi/Touchless_customer_feedback_survey_device_/blob/master/MediaPipe%20Hand%20Model%20back-end%20process.gif?raw=true" alt="MediaPipe Hand model backend process" height=350>
+</p>
+
+
 
 
 
@@ -48,3 +55,5 @@ To run the software, after installing above dependencies run the GUI.py or use t
 ```
 python gui.py
 ```
+#### Resources
+* https://www.youtube.com/watch?v=LAngmjW8Ngg
