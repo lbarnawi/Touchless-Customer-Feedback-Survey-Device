@@ -70,9 +70,9 @@ def fcf():
                             # print('Ok')
                         time.sleep(2)
                         ffsat = open("feedback_sat.txt", "a")
-                        ffsat.writelines(str("المدخل_الرئيسي") + str("^") + str("راضي") + str("^") + str(
+                        ffsat.writelines(str("Main entrance") + str("^") + str("Satisfied") + str("^") + str(
                             datetime.datetime.now()) + '\n')
-                        # f.writelines(str("راضي") + '\n')
+                        # f.writelines(str("Satisfied") + '\n')
                         # f.writelines(str(datetime.datetime.now()) + '\n')
                         # f.writelines( str(ts) + '\n')
                         ffsat.close()
@@ -82,7 +82,7 @@ def fcf():
                 neutral.append(1)
                 neutral.append(ts)
                 # print(neutral)
-                # print('محايد')
+                # print('Neutral')
                 fneut_0 = open("neut.txt", "a")
                 fneut_0.writelines(str(neutral[1]) + '\n')
                 fneut_0.close()
@@ -109,9 +109,9 @@ def fcf():
                             fneut_3.close()
                         #time.sleep(2)
                         ffneut = open("feedback_neut.txt", "a")
-                        ffneut.writelines(str("المدخل_الرئيسي") + str("^") + str("محايد") + str("^") + str(
+                        ffneut.writelines(str("Main Entrance") + str("^") + str("Neutral") + str("^") + str(
                             datetime.datetime.now()) + '\n')
-                        # f.writelines(str("محايد") + '\n')
+                        # f.writelines(str("Nutral") + '\n')
                         # f.writelines(str(datetime.datetime.now()) + '\n')
                         # f.writelines( str(ts) + '\n')
                         ffneut.close()
@@ -144,9 +144,9 @@ def fcf():
                             funs_3.close()
                         time.sleep(2)
                         ffuns = open("feedback.txt", "a")
-                        ffuns.writelines(str("المدخل_الرئيسي") + str("^") + str("غير_راضي") + str("^") + str(
+                        ffuns.writelines(str("Main Entrance") + str("^") + str("Unsatisfied") + str("^") + str(
                             datetime.datetime.now()) + '\n')
-                        # f.writelines(str("غير راضي") + '\n')
+                        # f.writelines(str("Unsatisfied ") + '\n')
                         # f.writelines(str(datetime.datetime.now()) + '\n')
                         # f.writelines( str(ts) + '\n')
                         ffuns.close()
@@ -156,7 +156,7 @@ def fcf():
         print(fps)
         ffps = open("fpscalc.txt", "a")
         ffps.writelines(str(fps) + '\n')
-        # f.writelines(str("راضي") + '\n')
+        # f.writelines(str("Satisfied") + '\n')
         # f.writelines(str(datetime.datetime.now()) + '\n')
         # f.writelines( str(ts) + '\n')
         ffps.close()

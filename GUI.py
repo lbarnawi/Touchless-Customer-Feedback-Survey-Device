@@ -77,20 +77,20 @@ def readingFun():
 # craeting a label widget
 ImgLabel00 = Label(root, text="   \n \n \n \n \n \n \n \n \n \n  ")
 ImgLabel00.grid(row=5, column=1, padx=5, pady=5)
-myLabel = Label(root, text="ما مدى رضاك عن الخدمة المقدمة؟", font=("Arial", 45))
+myLabel = Label(root, text="How satisfied are you about the service?", font=("Arial", 45))
 myLabel.grid(row=6, column=1)
 
-myLabel = Label(root, text="غير راض", font=("Arial", 45))
+myLabel = Label(root, text=" Unsatisfied", font=("Arial", 45))
 myLabel.grid(row=3, column=0)
 myLabel0 = Label(root, text="Unsatisfied", font=("Arial", 45))
 myLabel0.grid(row=4, column=0)
 
-myLabel2 = Label(root, text="محايد", font=("Arial", 45))
+myLabel2 = Label(root, text="Neutral", font=("Arial", 45))
 myLabel2.grid(row=3, column=1)
 myLabel20 = Label(root, text="Neutral", font=("Arial", 45))
 myLabel20.grid(row=4, column=1)
 
-myLabel4 = Label(root, text="راض", font=("Arial", 45))
+myLabel4 = Label(root, text="Satisfied", font=("Arial", 45))
 myLabel4.grid(row=3, column=2)
 myLabel40 = Label(root, text="Satisfied", font=("Arial", 45))
 myLabel40.grid(row=4, column=2)
